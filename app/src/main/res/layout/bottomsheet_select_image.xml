@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@drawable/custom_bottom_sheet_select_avatar"
+    android:paddingBottom="30dp"
+    android:paddingStart="20dp"
+    android:paddingEnd="20dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    >
+    <View
+
+        android:layout_gravity="center"
+        android:layout_width="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="4dp"
+        android:background="@drawable/custom_selcet_avatar_bottomsheet"
+        />
+  <TextView
+      android:textStyle="bold"
+      android:layout_marginTop="15dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:textSize="20sp"
+      android:textColor="@color/black"
+      android:gravity="center"
+      android:text="Thay đổi ảnh đại diện"
+      />
+    <TextView
+        android:id="@+id/openCamera"
+        android:layout_marginTop="30dp"
+        android:drawableStart="@drawable/baseline_camera_enhance_24"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:drawablePadding="20dp"
+        android:text="Camera"
+    />
+    <TextView
+        android:id="@+id/open_photo_library"
+        android:layout_marginTop="30dp"
+        android:drawableStart="@drawable/baseline_photo_library_24"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:drawablePadding="20dp"
+        android:text="Photo library"
+        />
+</LinearLayout>

@@ -1,0 +1,80 @@
+plugins {
+    id 'com.android.application'
+    id 'com.google.gms.google-services'
+}
+
+android {
+    namespace 'com.example.appshopping'
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.example.appshopping"
+        minSdk 26
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    packagingOptions {
+        exclude 'META-INF/NOTICE.md'
+        exclude 'META-INF/LICENSE.md'
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.9.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'com.google.firebase:firebase-auth:22.0.0'
+    implementation 'com.google.firebase:firebase-database:20.2.1'
+    // zalopay sdk và làm việc vs api
+
+    implementation "com.squareup.okhttp3:okhttp:5.0.0-alpha.11"
+
+    implementation 'com.google.firebase:firebase-storage-ktx:20.2.0'
+    implementation 'androidx.navigation:navigation-fragment:2.5.3'
+    implementation 'androidx.navigation:navigation-ui:2.5.3'
+    implementation fileTree(dir: 'E:\\Project Android\\tmp', include: ['*.aar', '*.jar'], exclude: [])
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    implementation 'com.etebarian:meow-bottom-navigation:1.2.0'
+    implementation 'com.facebook.shimmer:shimmer:0.5.0'
+    implementation 'com.github.bumptech.glide:glide:4.14.2'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.14.2'
+    implementation 'me.relex:circleindicator:2.1.6'
+    implementation "androidx.room:room-runtime:2.5.0"
+    annotationProcessor "androidx.room:room-compiler:2.5.0"
+    implementation 'it.xabaras.android:recyclerview-swipedecorator:1.4'
+    // animation start activity
+    implementation 'com.github.AtifSayings:Animatoo:1.0.1'
+    // header recycler view
+    implementation 'com.timehop.stickyheadersrecyclerview:library:0.4.3@aar'
+    // send email
+    implementation 'com.sun.mail:android-mail:1.6.6'
+    implementation 'com.sun.mail:android-activation:1.6.7'
+    // thanh đánh giá
+    implementation 'com.github.ome450901:SimpleRatingBar:1.5.1'
+    // mã pin
+    implementation 'io.github.chaosleung:pinview:1.4.4'
+    // progess bar
+    implementation 'com.github.ybq:Android-SpinKit:1.4.0'
+
+   // check permission
+    implementation 'io.github.ParkSangGwon:tedpermission-normal:3.3.0'
+
+    implementation 'com.google.android.gms:play-services-location:21.0.1'
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/m"
+    app:startDestination="@id/muaActivity">
+    <activity
+        android:id="@+id/muaActivity"
+        android:name="com.example.appshopping.activity.MuaActivity"
+        android:label="activity_mua"
+        tools:layout="@layout/activity_mua" />
+    <activity
+        android:id="@+id/shoppingActivity"
+        android:name="com.example.appshopping.activity.ShoppingActivity"
+        android:label="ShoppingActivity" />
+</navigation>

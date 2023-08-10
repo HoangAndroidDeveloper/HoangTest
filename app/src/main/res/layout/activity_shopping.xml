@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:background="#0BB8A7"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/ic_baseline_favorite_border_24" />
+            <View
+                android:layout_marginEnd="25dp"
+                android:layout_width="1dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/black"
+                android:layout_height="match_parent"
+                />
+
+            <ImageView
+                android:id="@+id/bt_addCart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="25dp"
+                android:src="@drawable/ic_baseline_add_shopping_cart_24" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/bt_mua"
+            android:layout_weight="1"
+            android:background="#F80606"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="16sp"
+            android:text="Mua ngay"
+            android:gravity="center"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".activity.ShoppingActivity">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/List_image_SP"
+                android:layout_width="match_parent"
+                android:layout_height="320dp" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="7dp"
+                android:background="#F40606"
+                android:paddingLeft="5dp"
+                android:paddingEnd="5dp"
+                android:text="Yêu thích"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/description_sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="10dp"
+                android:background="#F8D144"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:gravity="center"
+                    android:text="45%"
+                    android:textColor="#F80505"
+                    android:textSize="13sp"
+
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="GIẢM"
+                    android:textColor="@color/white"
+                    android:textSize="13sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            >
+
+            <com.willy.ratingbar.ScaleRatingBar
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srb_numStars="5"
+                android:id="@+id/rating_Start"
+                app:srb_minimumStars="3"
+                app:srb_rating="2"
+                app:srb_starWidth="17dp"
+                app:srb_starHeight="17dp"
+                app:srb_starPadding="3dp"
+                app:srb_stepSize="0.5"
+                app:srb_isIndicator="false"
+                app:srb_clickable="true"
+                app:srb_scrollable="true"
+                app:srb_clearRatingEnabled="true"
+                tools:ignore="MissingConstraints"
+                />
+                <TextView
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/rating_Start"
+                    android:id="@+id/star"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="5"
+                    android:layout_marginTop="1dp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    />
+
+                <View
+                    android:layout_marginTop="1dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/star"
+                    android:layout_width="2dp"
+                    android:id="@+id/view_2"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@color/black" />
+
+                <TextView
+                    android:layout_marginTop="1dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/view_2"
+                    android:id="@+id/sp_DaBan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+
+            <TextView
+                app:layout_constraintTop_toBottomOf="@id/rating_Start"
+                android:id="@+id/shopping_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="4000000đ"
+                app:layout_constraintStart_toStartOf="parent"
+                android:textColor="#F10707"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        >
+        <androidx.cardview.widget.CardView
+            android:backgroundTint="#626263"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+
+            app:cardCornerRadius="20dp"
+            >
+
+            <ImageView
+                android:id="@+id/bt_back_shop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:scaleType="center"
+
+                android:src="@drawable/ic_baseline_arrow_back_24" /></androidx.cardview.widget.CardView>
+        <View
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+        <androidx.cardview.widget.CardView
+            android:backgroundTint="#626263"
+            android:layout_width="40dp"
+            android:id="@+id/bt_gioHang_shop"
+            android:layout_height="40dp"
+            app:cardCornerRadius="20dp"
+            >
+            <ImageView
+                android:layout_gravity="center"
+                android:src="@drawable/ic_baseline_shopping_cart_24"
+                android:layout_width="wrap_content"
+                android:scaleType="centerCrop"
+                android:layout_height="wrap_content"
+                />
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:backgroundTint="#626263"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:cardCornerRadius="20dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="15dp"
+            >
+            <ImageView
+                android:layout_gravity="center"
+                android:src="@drawable/ic_baseline_more_vert_24"
+                android:layout_width="wrap_content"
+                android:scaleType="center"
+                android:layout_height="wrap_content"
+                /></androidx.cardview.widget.CardView>
+    </LinearLayout>
+</FrameLayout>

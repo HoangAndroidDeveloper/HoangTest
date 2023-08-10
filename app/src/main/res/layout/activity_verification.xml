@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.VerificationActivity"
+    >
+    <FrameLayout
+        android:id="@+id/frameLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#07ABF5"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+        <ImageView
+            android:id="@+id/bt_back_verification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/baseline_arrow_back_24_white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:text="Nhập mã xác minh"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+    </FrameLayout>
+    <TextView
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="Mã xác thực đã được qua tin hộp thư đến\nemail"
+        />
+    <TextView
+        android:id="@+id/emailReceiver"
+        android:layout_width="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:text="trinhviethoang307@gmail.com"
+
+        />
+    <com.chaos.view.PinView
+        android:layout_marginTop="60dp"
+        android:id="@+id/PinView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cursorVisible="false"
+        style="@style/PinWidget.PinView"
+        android:inputType="phone"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:textStyle="bold"
+        app:cursorColor="#05DCF8"
+        app:cursorWidth="2dp"
+        app:hideLineWhenFilled="false"
+        app:itemCount="6"
+        app:itemWidth="35dp"
+        app:itemSpacing="22dp"
+        app:lineColor="@drawable/state_pin_view"
+        app:lineWidth="2dp"
+        app:viewType="line"
+        />
+       <FrameLayout
+           android:layout_width="wrap_content"
+           android:layout_marginTop="10dp"
+           android:layout_gravity="center_horizontal"
+           android:layout_height="wrap_content"
+           >
+           <TextView
+               android:id="@+id/countDown"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:text="Gủi lại mã sau: 60s"
+               tools:ignore="HardcodedText"
+               android:textSize="16sp"
+               android:visibility="visible"
+               />
+           <TextView
+               android:id="@+id/sendTo"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:text="Gửi lại"
+               android:gravity="center"
+               tools:ignore="HardcodedText"
+               android:textSize="16sp"
+               android:textColor="@color/teal_200"
+               android:visibility="invisible"
+               />
+       </FrameLayout>
+
+    <Button
+        android:id="@+id/bt_xacNhanPinView"
+        style="@style/CardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="#EAE8E8"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="Tiếp tục"
+        android:textColor="#A8A2A2"
+        android:textSize="18sp" />
+</LinearLayout>

@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">AppShopping</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="DsCity">
+        <item>Hà Nội</item>
+        <item>Hải Phòng</item>
+        <item>Hà Nam</item>
+        <item>Thanh Hóa</item>
+        <item>Hồ Chí Minh</item>
+        <item>Bắc Ninh</item>
+        <item>Bắc Giang</item>
+        <item>Nam Định</item>
+        <item>Ninh Bình</item>
+        <item>Vĩnh Phúc</item>
+
+    </string-array>
+    <string-array name="DsQuan">
+        <!--        Hà Nội-->
+        <item>Hoàng Mai</item>
+        <item>Hai Bà Trưng0</item>
+        <item>Hà Đông</item>
+        <item>Hoàn Kiếm</item>
+        <!--         Hà Nam-->
+        <item>Bình Lục</item>
+        <item>Kim Bảng</item>
+        <item>Lý Nhân</item>
+        <item>Thanh Liêm</item>
+
+        <!--        Hải Phòng-->
+        <item>Đồ Sơn</item>
+        <item>Dương Kinh</item>
+        <item>Hải An</item>
+        <item>Hồng Bàng</item>
+    </string-array>
+    <string-array name="DsXa">
+        <item>0Phường Giải Phóng0</item>
+        <item>1Phường Giáp Bát0</item>
+        <item>2Phường Đại Kim0</item>
+        <item>3 Phường Định Công0</item>
+        <item>4Phường Ba La2</item>
+        <item>5Phường Biên Giang2</item>
+    </string-array>
+
+    // link emoji
+    <string-array name="LEmoji">
+        <item>https://em-content.zobj.net/source/noto-emoji-animations/344/smiling-face-with-smiling-eyes_1f60a.gif</item>
+        <item>https://em-content.zobj.net/source/noto-emoji-animations/344/loudly-crying-face_1f62d.gif</item>
+        <item>https://em-content.zobj.net/source/noto-emoji-animations/344/winking-face-with-tongue_1f61c.gif</item>
+        <item>https://em-content.zobj.net/source/noto-emoji-animations/344/money-mouth-face_1f911.gif</item>
+        <item>https://em-content.zobj.net/source/noto-emoji-animations/344/pouting-face_1f621.gif</item>
+    </string-array>
+</resources>
